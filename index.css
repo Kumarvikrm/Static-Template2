@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(0, 128, 0, 0.3),
+      rgba(173, 216, 230, 0.3)
+    ),
+    url(https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  color: white;
+  height: 100vh;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+}
+
+ul li {
+  margin-right: 20px;
+  font-weight: bold;
+
+  &:hover {
+    color: rgb(160, 37, 37);
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+
+  &:hover {
+    color: rgb(103, 11, 11);
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.borderCard {
+  width: 50%;
+  margin: 5 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.healthCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+.btn{
+  color: rgb(255, 255, 255);
+}
+.tretmentCard {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  /* background-color: rgb(238, 237, 236); */
+  border-radius: 10px !important;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+  }
+}
+
+.CardImage {
+  width: 40vw;
+  height: 60vh;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.button{
+  background: linear-gradient(90deg, rgb(128, 174, 188), rgb(103, 189, 120));
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    color: #5c0303;
+  }
+  
+}
+.CardContainer{
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid rgb(71, 41, 10);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgb(21, 101, 128), rgb(5, 137, 31));
+}
+.ram{
+  position: relative;
+}
+.mapCard{
+  background: #edeaea;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.footerCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40vh;
+  padding: 30px;
+}
+.footerCard1{
+  color: rgb(80, 4, 4);
+  padding: 10px;
+  width: 25%;
+}
