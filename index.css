@@ -7,16 +7,24 @@
 
 header {
   background-image: linear-gradient(
-      rgba(0, 128, 0, 0.3),
+      rgba(33, 128, 33, 0.3),
       rgba(173, 216, 230, 0.3)
     ),
     url(https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   color: white;
-  height: 100vh;
+  height: 85vh;
   background-size: cover;
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+.waveSize{
+  width: 100%;
+  position: absolute;
+  top: 91%;
+  left: 0%;
+  z-index: -1;
 }
 
 nav {
@@ -77,6 +85,7 @@ h2 {
   align-items: center;
   height: 80%;
   width: 100%;
+  position: relative;
 }
 .btn{
   color: rgb(255, 255, 255);
@@ -85,8 +94,8 @@ h2 {
   width: 80%;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  /* background-color: rgb(238, 237, 236); */
+  margin-top: 40px;
+  background-color: rgb(248, 246, 243);
   border-radius: 10px !important;
   transition: box-shadow 0.3s ease;
   &:hover {
@@ -130,22 +139,12 @@ h2 {
   border-radius: 8px;
   background: linear-gradient(90deg, rgb(21, 101, 128), rgb(5, 137, 31));
 }
-.ram{
-  position: relative;
-}
-.mapCard{
-  background: #edeaea;
-  color: black;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  left: 40%;
-}
 .footerCard{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 40vh;
+  height: 50vh;
+  margin-top: 50px;
   padding: 30px;
 }
 .footerCard1{
